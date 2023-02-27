@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    
+    
+    <script type="module" crossorigin src="./assets/index-f605d86b.js"></script>
+    <link rel="stylesheet" href="./assets/index-9b07baef.css">
+  </head>
+  <body class="flex items-center justify-center m-0 min-h-screen">
+    <div class="card w-96 bg-neutral text-primary-content">
+      <div class="card-body">
+        <h1 class="card-title">Password Generator</h1>
+        <input id="password" type="text" placeholder="" class="input input-bordered w-full max-w-xs" />
+        <button class="btn btn-primary mt-2 justify-center" id="copy">Copy</button>
+        <span class="label-text">Password Length</span> 
+        <input id="length" type="range" min="2" max="30" value="15" class="range" />
+        <div class="form-control">
+          <label class="label cursor-pointer">
+            <span class="label-text">Contain Uppercase Letters</span> 
+            <input id="upper" type="checkbox" checked="checked" class="checkbox checkbox-primary" />
+          </label>
+        </div>
+        <div class="form-control">
+          <label class="label cursor-pointer">
+            <span class="label-text">Contain Lowercase Letters</span> 
+            <input id="lower" type="checkbox" checked="checked" class="checkbox checkbox-primary" />
+          </label>
+        </div>
+        <div class="form-control">
+          <label class="label cursor-pointer">
+            <span class="label-text">Contain Numbers</span> 
+            <input id="numbers" type="checkbox" checked="checked" class="checkbox checkbox-primary" />
+          </label>
+        </div>
+        <div class="form-control">
+          <label class="label cursor-pointer">
+            <span class="label-text">Contain Symbols</span> 
+            <input id="symbols" type="checkbox" checked="checked" class="checkbox checkbox-primary" />
+          </label>
+        </div>
+        <button class="btn btn-secondary mt-2 justify-center" id="generate">Generate</button>
+      </div>
+    </div>
+  </body>
+</html>
