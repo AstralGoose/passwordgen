@@ -86,6 +86,9 @@ const copyContent = async () => {
         return;
     }
 
+    passwordEl.select();
+    passwordEl.setSelectionRange(0, 99999);
+
     try {
         await navigator.clipboard.writeText(passwordEl.value);
         alert('Password Copied to Clipboard!');
