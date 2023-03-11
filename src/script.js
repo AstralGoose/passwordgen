@@ -6,6 +6,7 @@ const lowerChk = document.getElementById('lower');
 const numbersChk = document.getElementById('numbers');
 const symbolsChk = document.getElementById('symbols');
 const generateBtn = document.getElementById('generate');
+const optionsBtns = document.querySelectorAll('input');
 
 const upperLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const lowerLetters = "abcdefghijklmnopqrstuvwxyz";
@@ -100,3 +101,7 @@ const copyContent = async () => {
 generateBtn.addEventListener("click", generatePassword);
 copyBtn.addEventListener("click", copyContent);
 window.addEventListener("load", generatePassword);
+
+optionsBtns.forEach((optionBtn) => {
+    optionBtn.addEventListener('change', generatePassword);
+});
